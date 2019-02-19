@@ -5,12 +5,12 @@ body{
 }
 
 .gallery-background{
-  background: url('../images/background.jpg') no-repeat center center fixed;
+  background: #ffffff url('../images/background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 .background-cloud{
-  background: url('../images/background2.jpg') no-repeat center center fixed;
+  background: #ffffff url('../images/background2.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
