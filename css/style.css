@@ -1,0 +1,193 @@
+body{
+    background-color:#e3eefd;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery-background{
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-cloud{
+  background: url('../images/background2.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+p{
+  box-sizing: border-box;
+  border: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+
+img{
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  box-sizing: border-box;
+  border: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  box-sizing: border-box;
+  border: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+
+li{
+	text-decoration: none;
+	display:inline;
+	background-color: #ffffff;
+	color: #000000;
+  float: left;
+}
+
+/* refered to https://www.w3schools.com/css/css_navbar.asp for help with navigation - ul, li a, li a:hover */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #666666;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #000000;
+}
+
+a{
+  font-family: 'Raleway', sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  alignment: center;
+  background-color: #666666;
+  display: inline-block;
+  padding: 15px;
+}
+
+.current {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #000000;
+  text-decoration: underline #ffffff;
+}
+
+/* used / slightly altered code from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ for skip to main content lines 35-59*/
+
+.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /* z-index: -999; */
+}
+
+a.skip-main:focus,
+a.skip-main:active {
+  color: #e3eefd;
+  /* background-color: #11068b; */
+  background-color: #000000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px #ffffff;
+  text-align: center;
+  font-size: 1.2em;
+  /* z-index: 999; */
+  font-family: 'Raleway', sans-serif;
+}
+
+footer {
+  background-color: #666666;
+  color: #ffffff;
+  box-sizing: border-box;
+  min-height: 10vh;
+  /* border: 5px;
+  padding: 5px;
+  margin: 5px; */
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+
+/* used https://www.taniarascia.com/how-to-build-a-responsive-image-gallery-with-flexbox/ for coding for my gallery page */
+/* used grid here for the gallery page */
+
+.gallery {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.gallery-item img{
+  display: block;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+  /* height: 100%;  or vh */
+  object-fit: scale-down;
+}
+
+.gallery-item img:hover{
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 600px) {
+  .gallery-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .gallery-item {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery-item {
+    width: calc(33.333% - 2rem);
+  }
+}
