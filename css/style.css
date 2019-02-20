@@ -119,12 +119,11 @@ nav a {
 
 a.skip-main:focus,
 a.skip-main:active {
-  color: #e3eefd;
-  /* background-color: #11068b; */
+  color: #ffffff;
   background-color: #000000;
   left: auto;
   top: auto;
-  width: 30%;
+  width: 20%;
   height: auto;
   overflow: auto;
   margin: 10px 35%;
@@ -135,6 +134,8 @@ a.skip-main:active {
   font-size: 1.2em;
   /* z-index: 999; */
   font-family: 'Raleway', sans-serif;
+  position: absolute;
+    right: -200px;
 }
 
 footer {
