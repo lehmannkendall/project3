@@ -196,3 +196,48 @@ footer {
     width: calc(33.333% - 2rem);
   }
 }
+
+.pages:before,
+.pages:after {
+  content: "";
+  display: table;
+}
+
+.pages:after {
+  clear: both;
+}
+
+.pages {
+  *zoom: 1;
+}
+
+.pages-item {
+  margin: 1.8%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.pages-image {
+  max-width: 100%;
+}
+
+.pages-item img {
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+  width: 80%;
+}
+
+@media all and (min-width: 420px) {
+  .pages {
+    max-wdith: 538px;
+  }
+  .pages-item {
+    float: center;
+  }
+}
+
+/* @media screen and (min-width: 400px)
+@media screen and (min-width: 600px)
+@media screen and (min-width: 1000px)
+@media screen and (min-width: 1400px) */
